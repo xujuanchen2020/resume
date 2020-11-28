@@ -22,7 +22,7 @@ const MyTimeline = ({title, children, icon}) => {
             </TimelineSeparator>
             <TimelineContent>
                 <Typography variant='h6' className={'timeline_header'}>
-                    {title}
+                    {"title"}
                 </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -30,7 +30,7 @@ const MyTimeline = ({title, children, icon}) => {
 
           <TimelineItem>
             <TimelineSeparator className="timeline_separator">
-                <TimelineDot className="timeline_dot"/>
+                <TimelineDot variant={'outlined'} className="timeline_dot"/>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>Code</TimelineContent>
