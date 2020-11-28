@@ -2,6 +2,7 @@ import React from 'react'
 import myImage from '../../images/image.jpeg'
 import {requirePropFactory, Typography} from '@material-ui/core'
 import './ProfileStyle.css'
+import MyTimeline from '../Timeline/Timeline'
 
 const Profile = () => {
     return (
@@ -14,7 +15,7 @@ const Profile = () => {
                 <img src={myImage} alt='photo'/>
             </figure>
             <div className='profile_info'>
-                insert timeline
+                <MyTimeline/>
                 <br/>
                 <button>button</button>
             </div>
