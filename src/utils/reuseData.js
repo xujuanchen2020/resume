@@ -30,5 +30,8 @@ export default {
             text: "Chen Chen",
             icon: <GitHubIcon/>,
         }
-    }
+    },
+
+    about: 'Hello, my name is Xujuan Chen. I am a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React. \n\nMy dream is to one day start my own business and become an entrepreneur. I am constantly learning new things. Currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS. \n\nMy latest project is a cookbook for developers. You can check it on my resume. It is built with Angular, MongoDB, Express JS, and Node JS. However, I will be rebuilding it using React in the coming months. When I am not learning something new chances are I am creating some YouTube videos.'
+    
 }

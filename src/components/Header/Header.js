@@ -24,11 +24,13 @@ const Header = (props) => {
             <Navbar.Collapse>
                 <Nav className="header-left">
                     <Nav.Link as={NavLink} to='/' 
-                    className={pathName==='/'?"header_link_active":"header_link"}>About</Nav.Link>
+                    className={pathName==='/'?"header_link_active":"header_link"}>About me</Nav.Link>
                     <Nav.Link as={NavLink} to='/resume' 
                     className={pathName==='/resume'?"header_link_active":"header_link"}>Resume</Nav.Link>
                     <Nav.Link as={NavLink} to='/portfolio' 
                     className={pathName==='/portfolio'?"header_link_active":"header_link"}>Portfolio</Nav.Link>
+                    <Nav.Link as={NavLink} to='/contact' 
+                    className={pathName==='/contact'?"header_link_active":"header_link"}>Contact</Nav.Link>
                 </Nav>
                 <div className='header_right'>
                     {Object.keys(reuseData.socials).map(key=>
