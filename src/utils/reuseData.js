@@ -10,7 +10,7 @@ export default {
     name: "Xujuan Chen",
     title: "Full Stack Developer",
     email: 'joycuber@gmail.com',
-    address: '1540 Unionport Rd, Bronx, NY 10462',
+    address: '1540 Unionport Rd, Bronx, NY',
     phone: '347-574-2258',
     socials:{
         facebook:{

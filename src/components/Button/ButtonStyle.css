@@ -7,6 +7,7 @@
     line-height: 15px !important;
     min-width: 100px !important;
     outline: none !important;
+    min-height: 30px;
 }
 
 .custom_btn .btn_icon_container{
