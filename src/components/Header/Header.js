@@ -1,32 +1,46 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import {Browser as Link, NavLink, withRouter} from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import reuseData from '../../utils/reuseData';
+import MyButton from '../Button/Button';
+import TelegramIcon from '@material-ui/icons/Telegram';
+import './HeaderStyle.css';
 
+const Header = (props) => {
+    const pathName = props?.location?.pathname;
 
-const Header = () => {
     return ( /* https://react-bootstrap.netlify.app/components/navbar/#navbars */
-        <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
-            </Nav>
-            <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-            </Form>
-        </Navbar.Collapse>
+        <Navbar expand="lg" sticky='top' className='header'>
+            <Nav.Link as ={NavLink} to='/' className={'header_navLink'}>
+                <Navbar.Brand className='header_home'>
+                    <HomeIcon/>
+                </Navbar.Brand>
+            </Nav.Link>
+
+            <Navbar.Toggle/>
+
+            <Navbar.Collapse>
+                <Nav className="header-left">
+                    <Nav.Link as={NavLink} to='/' 
+                    className={pathName==='/'?"header_link_active":"header_link"}>About</Nav.Link>
+                    <Nav.Link as={NavLink} to='/resume' 
+                    className={pathName==='/resume'?"header_link_active":"header_link"}>Resume</Nav.Link>
+                    <Nav.Link as={NavLink} to='/portfolio' 
+                    className={pathName==='/portfolio'?"header_link_active":"header_link"}>Portfolio</Nav.Link>
+                </Nav>
+                <div className='header_right'>
+                    {Object.keys(reuseData.socials).map(key=>
+                    (<a href= {reuseData.socials[key].link} target='_blank'>
+                        {reuseData.socials[key].icon}
+                    </a>))}
+                    <MyButton text={"contact me"} icon={<TelegramIcon/>} />
+                </div>
+            </Navbar.Collapse>
+
         </Navbar>
     )
 }
 
-export default Header
+export default withRouter(Header);

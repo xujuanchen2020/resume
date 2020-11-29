@@ -6,6 +6,7 @@ import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
 import Portfolio from './pages/Portfolio/Portfolio.js';
 import Resume from './pages/Resume/Resume.js';
+import About from './pages/About/About';
 import './App.css';
 
 function App() {
@@ -16,14 +17,17 @@ function App() {
           <Profile/>
         </Grid>
         <Grid item xs>
-          <Header/>
           <Router>
+            <Header/>
             <Switch>
               <Route path="/portfolio">
-                <Portfolio/>
+                <Portfolio />
               </Route>
-              <Route>
-                <Resume path="/"/>
+              <Route path="/resume">
+                <Resume />
+              </Route>
+              <Route path="/">
+                <About />
               </Route>
             </Switch>
           </Router>

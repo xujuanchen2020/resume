@@ -1,8 +1,8 @@
 .profile{
-    background-color: beige;
-    border-radius: 8px;
-    width: 100%;
-    display: inline-block;
+    background-color: cornsilk;
+    border-radius: 10px !important;
+    width: 100% !important;
+    display: inline-block ;
 }
 
 .profile_name {
@@ -22,13 +22,13 @@ font-weight: bold;
 }
 
 .profile_image {
-    margin-top: -18px;
+    margin-top: -18px !important;
     -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
     clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
 }
 
 .profile_image img {
-    width: 100%;
+    width: 100% !important;
 }
 
 .profile_info {
@@ -53,8 +53,19 @@ font-weight: bold;
 }
 
 .profile .button_container{
-    width:100%;
-    display: flex;
+    width:100% !important;
+    display: flex !important;
     justify-content: center;
     margin-top: 10px;
+}
+
+.profile .social_icons{
+    display: flex;
+    justify-content: center !important;
+    margin-top: 30px !important;
+}
+
+.profile .social_icons > a > .MuiSvgIcon-root{
+    margin-right: 10px;
+    color: purple;
 }
