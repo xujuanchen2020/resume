@@ -37,7 +37,7 @@ const Header = (props) => {
                     (<a href= {reuseData.socials[key].link} target='_blank'>
                         {reuseData.socials[key].icon}
                     </a>))}
-                    <MyButton text={"contact me"} icon={<TelegramIcon/>} />
+                    <MyButton text={ <a href="mailto:{reuseData.email}"> contact me</a>} icon={<TelegramIcon/>}/>
                 </div>
             </Navbar.Collapse>
 
