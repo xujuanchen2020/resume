@@ -1,5 +1,5 @@
 .profile{
-    background-color: burlywood;
+    background-color: linen;
     border-radius: 8px;
     width: 100%;
     display: inline-block;
@@ -50,4 +50,11 @@ font-weight: bold;
 
 .timeline_text > span {
     color: black;
+}
+
+.profile .button_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
