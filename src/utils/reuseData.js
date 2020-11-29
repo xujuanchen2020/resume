@@ -2,6 +2,9 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebOutlinedIcon from '@material-ui/icons/WebOutlined';
+import AndroidOutlinedIcon from '@material-ui/icons/AndroidOutlined';
+import TabletMacOutlinedIcon from '@material-ui/icons/TabletMacOutlined';
 
 export default {
     name: "Xujuan Chen",
@@ -73,6 +76,31 @@ export default {
         date: "2016 - 2017",
         description: "Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract. "
         }
+    ],
+
+    jobs:[
+        {
+            title: "Web Development",
+            description: "full stack web development.",
+            icon: <WebOutlinedIcon/>
+        },
+        {
+            title: "Android Development",
+            description: "full stack Android mobile development.",
+            icon: <AndroidOutlinedIcon/>
+        },
+        {
+            title: "IOS Development",
+            description: "full stack IOS development.",
+            icon: <TabletMacOutlinedIcon/>
+        }
+    ],
+
+    skills:[
+        {title: "Front-End", description: ["JavaScript", "Java", "Swift", "Python"]},
+        {title: "Back-End", description: ["NodeJS", "Java", "Python"]},
+        {title: "Database", description: ["Firebase", "mySQL", "littleSQL"]},
+        {title: "Source Control", description: ["Git", "GitHub"]},
     ]
 
 }

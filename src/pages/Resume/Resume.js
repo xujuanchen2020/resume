@@ -5,8 +5,7 @@ import MyTimeline, { CustomTimelineSeparator } from '../../components/Timeline/T
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import reuseData from '../../utils/reuseData';
-import { TimelineItem, TimelineSeparator, 
-    TimelineDot, TimelineConnector, TimelineContent } from '@material-ui/lab';
+import { TimelineItem, TimelineContent } from '@material-ui/lab';
 
 const Resume = () => {
     return (
