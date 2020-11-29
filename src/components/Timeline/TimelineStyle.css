@@ -21,26 +21,26 @@
 
 .timeline .timeline_dot_header{
     color: dimgray;
-    background-color: cornsilk;
+    background-color: rosybrown;
     font-size: small;
     padding: 10px;
 }
 
 .timeline .timeline_dot{
     color: dimgray;
-    border-color: cornsilk;
+    border-color: rosybrown;
     font-size: small;
     padding: 8px;
 }
 
 .timeline .MuiTimelineConnector-root{
-    background-color: cornsilk;
+    background-color: rosybrown;
 }
 
 /* check */
 .timeline .timeline_dot_header > .MuiSvgIcon-root{
     font-size: 20px;
-    color: darkslategray;
+    color: black;
 }
 
 .timeline .timeline_separator{

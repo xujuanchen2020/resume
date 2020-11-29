@@ -16,28 +16,7 @@ const About = () => {
             <Grid item xs={12}>
                 <Typography variant='body3' className='aboutme_text'>{reuseData.about}</Typography>
             </Grid>
-
         </Grid>
-
-        {/* Education and experience */}
-        <Grid className='section'>
-            
-        </Grid> 
-
-        {/* Education and experience */}
-        <Grid className='section'>
-        
-        </Grid> 
-
-        {/* Education and experience */}
-        <Grid className='section'>
-        
-        </Grid> 
-
-        {/* Education and experience */}
-        <Grid className='section'>
-        
-        </Grid> 
         </>
     )
 }

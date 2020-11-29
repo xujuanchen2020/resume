@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    opacity: 0.5;
 }
 
 .header .header_right{
