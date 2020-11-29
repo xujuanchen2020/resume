@@ -5,16 +5,17 @@ import Profile from './components/Profile/Profile.js';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
 import Portfolio from './pages/Portfolio/Portfolio.js';
-import Resume from './pages/Resume/Resume.js'
+import Resume from './pages/Resume/Resume.js';
+import './App.css';
 
 function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container className='top_60'>
+      <Grid container spacing={7}>
         <Grid item xs={12} sm={12} md={4} lg ={3}>
           <Profile/>
         </Grid>
-        <Grid item xs style={{background:"blue"}}>
+        <Grid item xs>
           <Header/>
           <Router>
             <Switch>
