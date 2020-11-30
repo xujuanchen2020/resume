@@ -1,11 +1,12 @@
 import React from 'react'
 import './PortfolioStyle.css'
-import { Card, Grid, Typography, Tab, Tabs, CardMedia, CardContent, Grow } from "@material-ui/core";
+import { Card, Grid, Typography, Tab, Tabs, CardMedia, CardContent, Grow, CardActionArea, Dialog, DialogTitle, DialogContent, DialogActions } from "@material-ui/core";
 import { useState } from 'react'
 import reuseData from '../../utils/reuseData'
 
 const Portfolio = () => {
     const [tabValue, setTabValue] = useState("All");
+    const [projectDialog, setProjectDialog] = useState(false)
 
     return (
         <>
@@ -33,24 +34,32 @@ const Portfolio = () => {
                         {[...new Set(reuseData.projects.map((item) => item.tag))].map
                         (
                             (tag) => (<Tab label={tag} value={tag} 
-                            className={tabValue == "All" ? "customTabs_item active" : "customTabs_item"}/>)                        
+                            className={tabValue == tag 
+                                ? "customTabs_item active" 
+                                : "customTabs_item"}/>)                        
                         )
                         }
                 </Tabs>
                 {/* Projects */}
                 <Grid item xs={12}>
-                    <Grid container spacing={5} className="">
+                    <Grid container spacing={5}>
                         {reuseData.projects.map((project) =>(
                         <>
                         {tabValue == project.tag || tabValue == "All" ? (
-                        <Grid item>
+                        <Grid item xs={12} sm={12} md={6}> 
                         <Grow in timeout={1000}>
-                            <Card>
-                                <CardMedia />
-                                <CardContent>
-                                    <Typography>{project.title}</Typography>
-                                    <Typography>{project.description}</Typography>
-                                </CardContent>
+                            <Card className="customCard" onClick={() => setProjectDialog(project)}>
+                                <CardActionArea>
+
+                                    <CardMedia className="customCard_image" 
+                                        image={project.image} title={project.title}/>
+                                    
+                                    <CardContent>
+                                        <Typography variant="body3" className="customCard_title">{project.title}</Typography>
+                                        <Typography variant="body2" className="customCard_caption">{project.caption }</Typography>
+                                    </CardContent>
+
+                                </CardActionArea>
                             </Card>
                         </Grow>
                         </Grid>
@@ -60,6 +69,29 @@ const Portfolio = () => {
                         ))}
                     </Grid>
                 </Grid>
+
+                <Dialog className="projectDialog" open={projectDialog} onClose={() => setProjectDialog(false)}>
+                    <DialogTitle variant="body3" onClose={() => setProjectDialog(false)}> 
+                        {projectDialog.title} 
+                    </DialogTitle>
+
+                    <img src={projectDialog.image} alt="Project Images" className="projectDialog_image" />
+
+                    <DialogContent>
+                        <Typography variant="body2" className="projectDialog_description">
+                            {projectDialog.description}
+                        </Typography>
+                    </DialogContent>
+
+                    <DialogActions>
+                        <Typography className="projectDialog_actions">
+                            {projectDialog?.links?.map((link) => (
+                                <a href={link.link} target="_blank" className="projectDialog_icon">{link.icon}</a> ))
+                            } 
+                        </Typography>
+                    </DialogActions>
+                </Dialog>
+
             </Grid>
         </Grid>
         </>

@@ -109,11 +109,12 @@ export default {
             tag:"React",
             image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
             title: "React Project1",
+            caption: "This is my project 1",
             description: "This is my project 1",
             links:[
                 {link: 'www.youtube.com', icon:<YouTubeIcon />},
                 {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -121,11 +122,12 @@ export default {
             tag:"React",
             image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
             title: "React Project1",
+            caption: "This is my project 1",
             description: "This is my project 1",
             links:[
                 {link: 'www.youtube.com', icon:<YouTubeIcon />},
                 {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -133,11 +135,12 @@ export default {
             tag:"Android",
             image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
             title: "Android Project1",
+            caption: "This is my project 1",
             description: "This is my project 1",
             links:[
                 {link: 'www.youtube.com', icon:<YouTubeIcon />},
                 {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -145,11 +148,12 @@ export default {
             tag:"IOS",
             image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
             title: "IOS Project1",
+            caption: "This is my project 1",
             description: "This is my project 1",
             links:[
                 {link: 'www.youtube.com', icon:<YouTubeIcon />},
                 {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
             ]
         }
     ]

@@ -1,7 +1,5 @@
 /* Tabs */
-.customTabs .customTabs_item {
-    padding: 0px !important;
-    min-width: 0 !important;
+.custom_tabs .customTabs_item {
     margin-right: 20px !important;
     text-transform: inherit !important;
     font-size: 16px !important;
@@ -9,7 +7,7 @@
     outline-width: 0px !important;
 }
 
-.customTabs .active{
+.custom_tabs .active{
     color: rosybrown !important;
 }
 
@@ -37,32 +35,32 @@
 }
 
 /* Dialogue */
-.projectDialogue .projectDialogue_image{
+.projectDialog .projectDialog_image{
     max-height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center center;
 }
 
-.projectDialogue .projectDialogue_description{
+.projectDialog .projectDialog_description{
     margin-top: 10px !important;
 }
 
-.projectDialogue .projectDialogue_action{
+.projectDialog .projectDialog_actions{
     justify-content: center !important;
     margin-bottom: 10px;
 }
 
-.projectDialogue .projectDialogue_icon{
+.projectDialog .projectDialog_icon{
     color: darkslategray;
     margin: 0px 12px;
     cursor: pointer;
 }
 
-.projectDialogue .projectDialogue_icon:hover{
+.projectDialog .projectDialog_icon:hover{
     color: rosybrown;
 }
 
-.projectDialogue .projectDialogue_icon > .MuiSvgIcon.root{
+.projectDialog .projectDialog_icon > .MuiSvgIcon.root{
     font-size: 30px !important;
 }
