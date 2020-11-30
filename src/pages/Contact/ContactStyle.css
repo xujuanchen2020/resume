@@ -1,0 +1,8 @@
+.contactInfo_item{
+    font-size: 14px;
+    line-height: 34px !important;
+}
+
+.contactInfo_item > span{
+    font-weight: bold;
+}

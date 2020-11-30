@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import {Browser as Link, NavLink, withRouter} from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import reuseData from '../../utils/reuseData';
@@ -19,23 +19,25 @@ const Header = (props) => {
                 </Navbar.Brand>
             </Nav.Link>
 
-            <Navbar.Toggle/>
+           
 
             <Navbar.Collapse>
                 <Nav className="header-left">
                     <Nav.Link as={NavLink} to='/' 
-                    className={pathName==='/'?"header_link_active":"header_link"}>About</Nav.Link>
+                    className={pathName==='/'?"header_link_active":"header_link"}>About me</Nav.Link>
                     <Nav.Link as={NavLink} to='/resume' 
                     className={pathName==='/resume'?"header_link_active":"header_link"}>Resume</Nav.Link>
                     <Nav.Link as={NavLink} to='/portfolio' 
                     className={pathName==='/portfolio'?"header_link_active":"header_link"}>Portfolio</Nav.Link>
+                    <Nav.Link as={NavLink} to='/contact' 
+                    className={pathName==='/contact'?"header_link_active":"header_link"}>Contact</Nav.Link>
                 </Nav>
                 <div className='header_right'>
                     {Object.keys(reuseData.socials).map(key=>
                     (<a href= {reuseData.socials[key].link} target='_blank'>
                         {reuseData.socials[key].icon}
                     </a>))}
-                    <MyButton text={"contact me"} icon={<TelegramIcon/>} />
+                    <MyButton text={ <a href="mailto:{reuseData.email}"> contact me</a>} icon={<TelegramIcon/>}/>
                 </div>
             </Navbar.Collapse>
 

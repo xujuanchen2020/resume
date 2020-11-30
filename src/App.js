@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer.js';
 import Portfolio from './pages/Portfolio/Portfolio.js';
 import Resume from './pages/Resume/Resume.js';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -19,17 +20,22 @@ function App() {
         <Grid item xs>
           <Router>
             <Header/>
-            <Switch>
-              <Route path="/portfolio">
-                <Portfolio />
-              </Route>
-              <Route path="/resume">
-                <Resume />
-              </Route>
-              <Route path="/">
-                <About />
-              </Route>
-            </Switch>
+            <div className='main-content'>
+              <Switch>
+                <Route path="/contact">
+                  <Contact />
+                </Route>
+                <Route path="/portfolio">
+                  <Portfolio />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+                <Route path="/">
+                  <About />
+                </Route>
+              </Switch>
+            </div>
           </Router>
           <Footer/>
         </Grid>

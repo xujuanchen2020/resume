@@ -7,7 +7,8 @@
     line-height: 15px !important;
     min-width: 100px !important;
     outline: none !important;
-
+    min-height: 30px;
+    opacity: 0.8;
 }
 
 .custom_btn .btn_icon_container{
@@ -30,6 +31,7 @@
 .custom_btn .btn_text{
     color: cornsilk;
     font-size: 14px !important;
+    font-weight: 700;
     text-transform: none !important;
     text-align: center !important;
     width: 100% !important;
