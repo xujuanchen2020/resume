@@ -19,7 +19,7 @@ const Header = (props) => {
                 </Navbar.Brand>
             </Nav.Link>
 
-            <Navbar.Toggle/>
+           
 
             <Navbar.Collapse>
                 <Nav className="header-left">

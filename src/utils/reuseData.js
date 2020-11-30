@@ -112,9 +112,9 @@ export default {
             caption: "This is my project 1",
             description: "This is my project 1",
             links:[
-                {link: 'www.youtube.com', icon:<YouTubeIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
+                {link: 'https://youtube.com', icon:<YouTubeIcon />},
+                {link: 'https://github.com', icon:<GitHubIcon />},
+                {link: 'https://www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -125,9 +125,9 @@ export default {
             caption: "This is my project 1",
             description: "This is my project 1",
             links:[
-                {link: 'www.youtube.com', icon:<YouTubeIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
+                {link: 'https://youtube.com', icon:<YouTubeIcon />},
+                {link: 'https://github.com', icon:<GitHubIcon />},
+                {link: 'https://www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -138,9 +138,9 @@ export default {
             caption: "This is my project 1",
             description: "This is my project 1",
             links:[
-                {link: 'www.youtube.com', icon:<YouTubeIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
+                {link: 'https://youtube.com', icon:<YouTubeIcon />},
+                {link: 'https://github.com', icon:<GitHubIcon />},
+                {link: 'https://www.linkedin.com', icon:<LinkedInIcon />},
             ]
         },
 
@@ -151,9 +151,9 @@ export default {
             caption: "This is my project 1",
             description: "This is my project 1",
             links:[
-                {link: 'www.youtube.com', icon:<YouTubeIcon />},
-                {link: 'www.github.com', icon:<GitHubIcon />},
-                {link: 'www.linkedin.com', icon:<LinkedInIcon />},
+                {link: 'https://youtube.com', icon:<YouTubeIcon />},
+                {link: 'https://github.com', icon:<GitHubIcon />},
+                {link: 'https://www.linkedin.com', icon:<LinkedInIcon />},
             ]
         }
     ]
