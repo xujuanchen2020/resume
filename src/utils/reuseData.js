@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import WebOutlinedIcon from '@material-ui/icons/WebOutlined';
 import AndroidOutlinedIcon from '@material-ui/icons/AndroidOutlined';
 import TabletMacOutlinedIcon from '@material-ui/icons/TabletMacOutlined';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 export default {
     name: "Xujuan Chen",
@@ -35,7 +36,7 @@ export default {
         }
     },
 
-    about: 'Hello, my name is Xujuan Chen. I am a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React. \n\nMy dream is to one day start my own business and become an entrepreneur. I am constantly learning new things. Currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS. \n\nMy latest project is a cookbook for developers. You can check it on my resume. It is built with Angular, MongoDB, Express JS, and Node JS. However, I will be rebuilding it using React in the coming months. When I am not learning something new chances are I am creating some YouTube videos.',
+    about: 'Hello, my name is Xujuan Chen. I am a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React. \n\nMy dream is to one day start my own business and become an entrepreneur. I am constantly learning new things. Currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS. \n\nMy latest project is a cookbook for developers. You can check it on my resume. It is built with Angular, MongoDB, Express JS, and Node JS. However, I will be rebuilding it using React in the coming months. ',
 
     experience: [
             {
@@ -101,6 +102,56 @@ export default {
         {title: "Back-End", description: ["NodeJS", "Java", "Python"]},
         {title: "Database", description: ["Firebase", "mySQL", "littleSQL"]},
         {title: "Source Control", description: ["Git", "GitHub"]},
+    ],
+
+    projects:[
+        {
+            tag:"React",
+            image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+            title: "React Project1",
+            description: "This is my project 1",
+            links:[
+                {link: 'www.youtube.com', icon:<YouTubeIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+            ]
+        },
+
+        {
+            tag:"React",
+            image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+            title: "React Project1",
+            description: "This is my project 1",
+            links:[
+                {link: 'www.youtube.com', icon:<YouTubeIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+            ]
+        },
+
+        {
+            tag:"Android",
+            image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+            title: "Android Project1",
+            description: "This is my project 1",
+            links:[
+                {link: 'www.youtube.com', icon:<YouTubeIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+            ]
+        },
+
+        {
+            tag:"IOS",
+            image: 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+            title: "IOS Project1",
+            description: "This is my project 1",
+            links:[
+                {link: 'www.youtube.com', icon:<YouTubeIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+                {link: 'www.github.com', icon:<GitHubIcon />},
+            ]
+        }
     ]
 
 }

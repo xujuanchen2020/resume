@@ -1,5 +1,4 @@
 import React from 'react'
-import './ResumeStyle.css'
 import { Grid, Typography } from "@material-ui/core";
 import MyTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline.js';
 import WorkIcon from '@material-ui/icons/Work';

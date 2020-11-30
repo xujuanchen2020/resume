@@ -8,6 +8,7 @@
     min-width: 100px !important;
     outline: none !important;
     min-height: 30px;
+    opacity: 0.8;
 }
 
 .custom_btn .btn_icon_container{
