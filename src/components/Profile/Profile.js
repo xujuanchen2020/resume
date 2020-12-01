@@ -5,6 +5,8 @@ import './ProfileStyle.css'
 import reuseData from '../../utils/reuseData'
 import MyButton from '../Button/Button'
 import GetAppIcon from '@material-ui/icons/GetApp';
+import Resume from '../../utils/Resume.pdf'
+
 
 const Profile = () => {
     return (
@@ -24,7 +26,11 @@ const Profile = () => {
                     </a>))}
                 </div>
                 <div className='button_container'>
-                <MyButton text={"Download CV"} icon={<GetAppIcon/>}/>
+
+                {/* lol, just add a tag for downloading */}
+                <a class="resume-button" src={Resume} href={Resume} target="_blank">
+                    <MyButton text={"Download CV"} icon={<GetAppIcon/>} />
+                </a>
                 </div>
             </div>
         </div>
