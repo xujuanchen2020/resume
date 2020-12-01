@@ -57,7 +57,6 @@ const Resume = () => {
             </Grid>
         </Grid> 
 
-
         {/* Education and experience */}
         <Grid className='section'>
         
