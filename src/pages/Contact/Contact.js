@@ -16,21 +16,26 @@ const Contact = () => {
             </Grid>
 
             <Grid item xs={12}>
+                <form>
                 <Grid container spacing="3">
-                    <Grid item xs={12} sm={6}>
-                        <TextField fullWidth name='name' label='Name'/>
+                        <Grid item xs={12} md={6}>
+                            
+
+                            <TextField fullWidth name='name' label='Name'/>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <TextField fullWidth name='email' label='Email'/>  
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField fullWidth name='message' label='Message' multiline rows='4'/>
+                        </Grid>
+                        <Grid item xs={12}> 
+                            <MyButton text="Submit" />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <TextField fullWidth name='email' label='Email'/>  
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField fullWidth name='message' label='Message' multiline rows='4'/>
-                    </Grid>
-                    <Grid item xs={12}> 
-                        <MyButton text="Submit"/>
-                    </Grid>
+                
+                </form>
                 </Grid>
-            </Grid>
             </Grid>
             
             {/* Contact Information */}
@@ -41,22 +46,22 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <Grid container>
-                        <Grid item>
+                        <Grid item xs={12}>
                             <Typography className='contactInfo_item'>
                                 <span>Address: </span> {reuseData.address}
                             </Typography>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={12}>
                             <Typography className='contactInfo_item'>
                                 <span>Phone: </span> {reuseData.phone}
                             </Typography>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={12}>
                             <Typography className='contactInfo_item'>
                                 <span>Email: </span><a href="mailto:{reuseData.email}"> {reuseData.email} </a>
                             </Typography>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={12}>
                             <Typography className='contactInfo_item'>
                                 <span>Job: </span> {reuseData.title}
                             </Typography>
