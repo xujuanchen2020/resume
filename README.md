@@ -1,5 +1,7 @@
 # cmp464-resume
 
+Deploy url:  https://mysterious-chamber-96110.herokuapp.com/
+<br/>
 Project 1 - portfolio website development of CMP464  <br/>
 The portfolio has applied router to create multiple pages. <br/>
 It allows user to download the resume by clicking the download button. <br/>
